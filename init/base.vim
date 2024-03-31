@@ -15,7 +15,8 @@ set hlsearch " 検索ハイライト
 set smartindent " 自動でインデントしてくれる
 
 "####### エンコーディング設定
-set fileencodings=utf-8,cp832
+" set fileencodings=utf-8,cp832
+set fileencodings=utf-8
 "########swpファイル、バックアップファイル、undoファイルを出力させない。
 set noswapfile
 set nobackup
@@ -49,8 +50,8 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=21
 
 "Yankした時にWindowsのクリップボードに共有。
 augroup Yank
-  au!
-  autocmd TextYankPost * :call system('clip.exe',@")
+    au!
+    autocmd TextYankPost * :call system('iconv -t utf16 | clip.exe', @")
 augroup END
 
 "ステータスラインにgithubの状態を追加

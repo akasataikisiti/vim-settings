@@ -29,7 +29,7 @@ nmap s<up> <C-w>+
 nmap s<down> <C-w>-
 "カーソル下のファイルを開く
 "縦割り
-nmap sf :split<CR>
+nmap ss :split<CR>
 nmap sv :vsplit<CR>
 nmap so <C-w>o
 "新規タブ
@@ -62,10 +62,6 @@ endfunction
 " tabを閉じる
 nnoremap <leader>c :tabc<CR>
 
-"###Tagbarの呪文をキーマッピング
-nnoremap <Leader>t  :TagbarOpenAutoClose<CR>
-nnoremap <Leader>T  :echo tagbar#currenttag('[%s]', 'No tags')<CR>
-
 "set current directory to current file
 nnoremap <Leader>ll  :lcd %:h<CR>
 nnoremap <Leader>lr  :call SetCurrentDirToGitRoot()<CR>
@@ -90,7 +86,7 @@ inoremap jk <Esc>:w<CR>
 tnoremap jk <C-\><C-n>
 inoremap <silent> <C-d> <BS>
 inoremap <silent> <C-c> <Del>
-inoremap <silent> <C-l> <Right>
+inoremap <c-l> <Right>
 inoremap <silent> <C-h> <Left>
 inoremap <silent> <C-e> <Esc>A
 inoremap <silent> <C-a> <Esc>I
