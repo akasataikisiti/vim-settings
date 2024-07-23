@@ -32,6 +32,12 @@ nmap s<down> <C-w>-
 nmap ss :split<CR>
 nmap sv :vsplit<CR>
 nmap so <C-w>o
+
+" switch horizontal scroll
+nnoremap zH zh
+nnoremap zh zH
+nnoremap zL zl
+nnoremap zl zL
 "新規タブ
 nmap sF <c-w>gf
 "Moving text

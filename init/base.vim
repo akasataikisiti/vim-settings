@@ -51,7 +51,7 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=21
 "Yankした時にWindowsのクリップボードに共有。
 augroup Yank
     au!
-    autocmd TextYankPost * :call system('iconv -t utf16 | clip.exe', @")
+    autocmd TextYankPost * :call system('iconv -t sjis | clip.exe', @")
 augroup END
 
 "ステータスラインにgithubの状態を追加
