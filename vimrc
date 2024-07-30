@@ -16,8 +16,8 @@ nmap <C-l> <Plug>(easymotion-overwin-line)
 let g:translate_source = "en"
 let g:translate_target = "ja"
 let g:translate_winsize = 10
-vnoremap <F3> :Translate
-vnoremap <F4> :Translate!
+vnoremap <F3> :Translate<CR>
+vnoremap <F4> :Translate!<CR>
 "##############vim-plugでプラグインを管理#############
 call plug#begin()
 Plug 'easymotion/vim-easymotion' " cursor move
@@ -36,14 +36,24 @@ Plug 'tpope/vim-fugitive'
 Plug 'vimwiki/vimwiki'
 " Plug 'skanehira/translate.vim'
 Plug 'skanehira/denops-translate.vim'
+Plug 'vim-denops/denops.vim'
 Plug 'tpope/vim-surround'
 Plug 'jonathanfilip/vim-lucius' " color scheme
 Plug 'yuucu/vimq.vim' " これはqにオプションを正しく渡せてないから自分でnvimように作りたい。あとこれに訂正出してもいいかも
+Plug 'yuratomo/w3m.vim'
+
+Plug 'tpope/vim-dadbod'  " database manipulate on vim
+Plug 'kristijanhusak/vim-dadbod-completion'
+Plug 'kristijanhusak/vim-dadbod-ui'
 " Plug 'ryanoasis/vim-devicons'   " icons (wsl2 not support devicons )
 call plug#end()
 
+"#### denops
+let g:denops#deno = '/home/linuxbrew/.linuxbrew/bin/deno'
+
 "#########ack.vimを動かさせるために以下の記述が必要だった。
-let g:ackprg = "/home/kosuke/bin/ack -s -H --nocolor --nogroup --column"
+" let g:ackprg = "/home/kosuke/bin/ack -s -H --nocolor --nogroup --column"
+let g:ackprg = substitute(system('which ack'), '\n', '', '') . ' -s -H --nocolor --nogroup --column'
 
 "#######UltiSnipsのスニペットファイル置き場の定義
 let g:UltiSnipsSnippetsDir=expand("$HOME/dotfiles/.vim/UltiSnips")

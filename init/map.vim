@@ -48,6 +48,7 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 nnoremap :bp :bprevious<CR>
 nnoremap :bn :bnext<CR>
 "tabが一つだけだったら新しいタブを開く
+nnoremap te :tabedit<CR>
 nnoremap gt :call TabnewOrGoNext()<CR>
 nnoremap gT :call TabnewOrGoPrev()<CR>
 function! TabnewOrGoNext()
@@ -117,3 +118,7 @@ if v:version >=700
     execute ":tabnew ".f
   endfunction
 endif
+
+
+nnoremap <Leader>fr :Ack!<space>
+
