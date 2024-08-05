@@ -75,11 +75,6 @@ if has('syntax')
     call ZenkakuSpace()
 endif
 
-"color scheme
-colorscheme lucius
-set t_Co=256
-set termguicolors
-set background=dark
 
 " netrwを見やすく
 " ファイルツリーの表示形式、1にするとls -laのような表示になります

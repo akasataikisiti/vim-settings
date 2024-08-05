@@ -1,3 +1,6 @@
+" read mycmdファイル
+source ~/.vim/settings/init/mycommands/mycmd.vim
+
 " nnoremap <Leader>cv :e ~/cheatsheets/vim.txt
 nnoremap <Leader>ev :e ~/.vim/vimrc<CR>
 
@@ -51,41 +54,12 @@ nnoremap :bn :bnext<CR>
 nnoremap te :tabedit<CR>
 nnoremap gt :call TabnewOrGoNext()<CR>
 nnoremap gT :call TabnewOrGoPrev()<CR>
-function! TabnewOrGoNext()
-  if 1 == tabpagenr('$')
-    execute ":tabedit"
-  else
-    execute ":tabnext"
-  endif
-endfunction
 
-function! TabnewOrGoPrev()
-  if 3 > tabpagenr('$')
-    execute ":tabedit"
-  else
-    execute ":tabp"
-  endif
-endfunction
-" tabを閉じる
 nnoremap <leader>c :tabc<CR>
-
 "set current directory to current file
 nnoremap <Leader>ll  :lcd %:h<CR>
 nnoremap <Leader>lr  :call SetCurrentDirToGitRoot()<CR>
 
-function! SetCurrentDirToGitRoot()
-  let l:git_root_marker = '.git'
-  let l:current_file = expand('%:p')
-  let l:git_root = finddir(l:git_root_marker, l:current_file . ';')
-
-  if l:git_root != ''
-    let l:git_root_path = substitute(l:git_root, l:git_root_marker . '$', '', '')
-    echo l:git_root_path
-    execute 'cd ' . l:git_root_path
-  else
-    echo "No repo found."
-  endif
-endfunction
 
 
 "imap"
@@ -120,5 +94,4 @@ if v:version >=700
 endif
 
 
-nnoremap <Leader>fr :Ack!<space>
 
