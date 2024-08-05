@@ -1,4 +1,4 @@
-function! s:tabnewOrGoNext()
+function! TabnewOrGoNext()
   " 現在のタブの数を取得
   let tab_count = tabpagenr('$')
   if tab_count == 1
@@ -10,7 +10,7 @@ function! s:tabnewOrGoNext()
   endif
 endfunction
 
-function! s:tabnewOrGoPrev()
+function! TabnewOrGoPrev()
   " 現在のタブの数を取得
   let tab_count = tabpagenr('$')
   if tab_count < 3
@@ -22,11 +22,11 @@ function! s:tabnewOrGoPrev()
   endif
 endfunction
 
-command! -nargs=0 TabnewOrGoNext call s:tabnewOrGoNext()
-command! -nargs=0 TabnewOrGoPrev call s:tabnewOrGoPrev()
+command! -nargs=0 TabnewOrGoNext call TabnewOrGoNext()
+command! -nargs=0 TabnewOrGoPrev call TabnewOrGoPrev()
 
 " delete no name buffers
-function! s:CloseUnnamedBuffers()
+function! CloseUnnamedBuffers()
   " 全タブをループ
   let tabs = tabpagenr('$')
   for tab in range(1, tabs)
@@ -50,7 +50,7 @@ function! s:CloseUnnamedBuffers()
   endfor
 endfunction
 
-command! -nargs=0 CloseUnnamedBuffers call s:CloseUnnamedBuffers()
+command! -nargs=0 CloseUnnamedBuffers call CloseUnnamedBuffers()
 
 
 function! SetCurrentDirToGitRoot()
