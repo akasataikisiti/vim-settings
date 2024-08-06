@@ -25,6 +25,8 @@ Plug 'yuratomo/w3m.vim'
 Plug 'tpope/vim-dadbod'  " database manipulate on vim いつか実験してみる
 Plug 'kristijanhusak/vim-dadbod-completion'
 Plug 'kristijanhusak/vim-dadbod-ui'
+
+Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'   " icons (wsl2 not support devicons )
 call plug#end()
 

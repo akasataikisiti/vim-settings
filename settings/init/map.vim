@@ -60,6 +60,9 @@ nnoremap <leader>c :tabc<CR>
 nnoremap <Leader>ll  :lcd %:h<CR>
 nnoremap <Leader>lr  :call SetCurrentDirToGitRoot()<CR>
 
+nnoremap <s-h>  :bnext<CR>
+nnoremap <s-l>  :bprev<CR>
+
 
 
 "imap"
