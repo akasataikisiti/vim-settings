@@ -7,7 +7,7 @@ Plug 'mileszs/ack.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdalisue/fern.vim'
 Plug 'alvan/vim-closetag'
-Plug 'sirver/ultisnips'
+" Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
@@ -25,6 +25,8 @@ Plug 'yuratomo/w3m.vim'
 Plug 'tpope/vim-dadbod'  " database manipulate on vim いつか実験してみる
 Plug 'kristijanhusak/vim-dadbod-completion'
 Plug 'kristijanhusak/vim-dadbod-ui'
+
+Plug 'vim-scripts/rfc-syntax'
 
 Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'   " icons (wsl2 not support devicons )
