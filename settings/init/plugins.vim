@@ -27,8 +27,10 @@ Plug 'kristijanhusak/vim-dadbod-completion'
 Plug 'kristijanhusak/vim-dadbod-ui'
 
 Plug 'vim-scripts/rfc-syntax'
+Plug 'luisjure/csound-vim'
 
 Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'   " icons (wsl2 not support devicons )
+Plug 'christoomey/vim-system-copy'
 call plug#end()
 

@@ -48,11 +48,12 @@ highlight DiffDelete cterm=bold ctermfg=10 ctermbg=52
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=21
 
+"(yank関係はプラグインにまかせるようにする。wsl2で問題なかったら以下の行削除)
 "Yankした時にWindowsのクリップボードに共有。
-augroup Yank
-    au!
-    autocmd TextYankPost * :call system('iconv -t sjis | clip.exe', @")
-augroup END
+" augroup Yank
+"     au!
+"     autocmd TextYankPost * :call system('iconv -t sjis | clip.exe', @")
+" augroup END
 
 "ステータスラインにgithubの状態を追加
 " set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
