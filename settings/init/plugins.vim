@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'jonathanfilip/vim-lucius' " color scheme
 Plug 'yuucu/vimq.vim' " これはqにオプションを正しく渡せてないから自分でnvimように作りたい。あとこれに訂正出してもいいかも
 Plug 'yuratomo/w3m.vim'
+Plug 'vim-fall/fall.vim'
 
 Plug 'tpope/vim-dadbod'  " database manipulate on vim いつか実験してみる
 Plug 'kristijanhusak/vim-dadbod-completion'
