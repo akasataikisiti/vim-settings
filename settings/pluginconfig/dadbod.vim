@@ -12,3 +12,5 @@ augroup AutoOpenFoldsForDbout
     autocmd!
     autocmd FileType dbout setlocal nofoldenable
 augroup END
+
+autocmd FileType sql,mysql,pgsql setlocal omnifunc=vim_dadbod_completion#omni

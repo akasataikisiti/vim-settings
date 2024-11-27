@@ -3,4 +3,7 @@
 let g:ackprg = substitute(system('which ack'), '\n', '', '') . ' -s -H --nocolor --nogroup --column'
 
 nnoremap <Leader>fr :Ack!<space>
+nnoremap <Leader>fh :AckHelp<space>
+nnoremap :: :AckWindow<space>
+
 

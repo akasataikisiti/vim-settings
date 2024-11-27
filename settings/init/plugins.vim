@@ -32,5 +32,19 @@ Plug 'luisjure/csound-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'   " icons (wsl2 not support devicons )
 Plug 'christoomey/vim-system-copy'
+
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
+Plug 'Shougo/ddc.vim' "ddc.vim本体
+Plug 'vim-denops/denops.vim' " DenoでVimプラグインを開発するためのプラグイン
+Plug 'Shougo/pum.vim' " ポップアップウィンドウを表示するプラグイン
+Plug 'Shougo/ddc-ui-pum' 
+Plug 'Shougo/ddc-around' " カーソル周辺の既出単語を補完するsource
+Plug 'shun/ddc-source-vim-lsp' " ddcとlspをつなぐ
+Plug 'LumaKernel/ddc-file' " ファイル名を補完するsource
+Plug 'Shougo/ddc-matcher_head' " 入力中の単語を補完の対象にするfilter
+Plug 'Shougo/ddc-sorter_rank' " 補完候補を適切にソートするfilter
+Plug 'Shougo/ddc-converter_remove_overlap' " 補完候補の重複を防ぐためのfilter
 call plug#end()
 

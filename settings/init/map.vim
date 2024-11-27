@@ -35,6 +35,10 @@ nmap s<down> <C-w>-
 nmap ss :split<CR>
 nmap sv :vsplit<CR>
 nmap so <C-w>o
+nmap s+ <C-w>+
+nmap s- <C-w>-
+nmap s< <C-w><
+nmap s> <C-w>>
 
 " switch horizontal scroll
 nnoremap zH zh
@@ -79,6 +83,10 @@ inoremap <silent> <C-s> <Esc>bi
 inoremap <silent> <C-g>h <c-u>
 inoremap <silent> <C-g>l <Esc><Right>d$a
 inoremap <silent> <C-g>i <Esc>ciw
+" InsertモードでTabキーを<C-x><C-o>にマッピング
+inoremap <Tab> <C-x><C-o>
+
+
 
 "terminal mode
 :tnoremap jk <C-\><C-n>
