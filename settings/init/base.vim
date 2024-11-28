@@ -14,6 +14,9 @@ set incsearch " インクリメンタルサーチ
 set hlsearch " 検索ハイライト
 set smartindent " 自動でインデントしてくれる
 
+" 区切り文字をシンプルに
+set fillchars+=vert:│
+
 "####### エンコーディング設定
 " set fileencodings=utf-8,cp832
 set fileencodings=utf-8
