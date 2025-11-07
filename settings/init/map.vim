@@ -64,10 +64,12 @@ nnoremap <leader>c :tabc<CR>
 nnoremap <Leader>ll  :lcd %:h<CR>
 nnoremap <Leader>lr  :call SetCurrentDirToGitRoot()<CR>
 
-nnoremap <s-h>  :bnext<CR>
-nnoremap <s-l>  :bprev<CR>
+nnoremap <s-h>  :bprev<CR>
+nnoremap <s-l>  :bnext<CR>
 
-
+" move quickfix list
+nnoremap <esc>j  :cnext<CR>
+nnoremap <esc>k  :cprev<CR>
 
 "imap"
 inoremap jk <Esc>:w<CR>

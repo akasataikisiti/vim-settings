@@ -5,5 +5,6 @@ let g:ackprg = substitute(system('which ack'), '\n', '', '') . ' -s -H --nocolor
 nnoremap <Leader>fr :Ack!<space>
 nnoremap <Leader>fh :AckHelp<space>
 nnoremap :: :AckWindow<space>
+nnoremap <cr><cr> :Ack <C-r><C-w><cr>
 
 
