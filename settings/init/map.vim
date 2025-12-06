@@ -7,6 +7,7 @@ source ~/.vim/settings/init/mycommands/buf_gpt.vim
 
 " nnoremap <Leader>cv :e ~/cheatsheets/vim.txt
 nnoremap <Leader>ev :e ~/.vim/vimrc<CR>
+nnoremap <Leader>ec :e ~/.vim/cheat.md<CR>
 
 nnoremap <Leader>m  :MRU<CR>
 

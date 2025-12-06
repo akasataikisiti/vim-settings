@@ -160,10 +160,10 @@ endfunction
 " お好みで変更してOK
 
 " ノーマルモード: バッファ全体
-nnoremap <silent> <leader>gq :call GPT_BufferAskPrompt()<CR>
-nnoremap <silent> <leader>gt :call GPT_BufferAskTemplate()<CR>
+nnoremap <silent> <leader>bgq :call GPT_BufferAskPrompt()<CR>
+nnoremap <silent> <leader>bgt :call GPT_BufferAskTemplate()<CR>
 
 " ビジュアルモード: 選択範囲
-xnoremap <silent> <leader>gq :<C-u>call GPT_RangeAskPrompt('<', '>')<CR>
-xnoremap <silent> <leader>gt :<C-u>call GPT_RangeAskTemplate('<', '>')<CR>
+xnoremap <silent> <leader>bgq :<C-u>call GPT_RangeAskPrompt('<', '>')<CR>
+xnoremap <silent> <leader>bgt :<C-u>call GPT_RangeAskTemplate('<', '>')<CR>
 
