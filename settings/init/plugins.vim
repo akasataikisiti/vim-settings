@@ -6,6 +6,9 @@ Plug 'tpope/vim-commentary'
 Plug 'mileszs/ack.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'lambdalisue/fern-git-status.vim'
 Plug 'alvan/vim-closetag'
 " Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
@@ -26,11 +29,11 @@ Plug 'vim-fall/fall.vim'
 Plug 'tpope/vim-dadbod'  " database manipulate on vim いつか実験してみる
 Plug 'kristijanhusak/vim-dadbod-completion'
 Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'https://git.sr.ht/~k1nkreet/gemivim' " gemini ブラウジング
 
-Plug 'vim-scripts/rfc-syntax'
+Plug 'mhinz/vim-rfc'
 Plug 'luisjure/csound-vim'
 
-Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'   " icons (wsl2 not support devicons )
 Plug 'christoomey/vim-system-copy'
 

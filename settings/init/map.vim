@@ -1,5 +1,9 @@
 " read mycmdファイル
 source ~/.vim/settings/init/mycommands/mycmd.vim
+source ~/.vim/settings/init/mycommands/toggle_transparency.vim
+source ~/.vim/settings/init/mycommands/ejdict_search.vim
+source ~/.vim/settings/init/mycommands/buf_gpt.vim
+
 
 " nnoremap <Leader>cv :e ~/cheatsheets/vim.txt
 nnoremap <Leader>ev :e ~/.vim/vimrc<CR>

@@ -58,6 +58,10 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=21
 "     autocmd TextYankPost * :call system('iconv -t sjis | clip.exe', @")
 " augroup END
 
+" ノーマルコピーでclipboardにコピーするようにする
+set clipboard=unnamedplus
+
+
 "ステータスラインにgithubの状態を追加
 " set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
 
@@ -80,14 +84,14 @@ if has('syntax')
 endif
 
 
-" netrwを見やすく
+" netrwを見やすく ※ fernを使うようにした。
 " ファイルツリーの表示形式、1にするとls -laのような表示になります
-let g:netrw_liststyle=1
+" let g:netrw_liststyle=1
 " ヘッダを非表示にする
-let g:netrw_banner=0
+" let g:netrw_banner=0
 " サイズを(K,M,G)で表示する
-let g:netrw_sizestyle="H"
+" let g:netrw_sizestyle="H"
 " 日付フォーマットを yyyy/mm/dd(曜日) hh:mm:ss で表示する
-let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
+" let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
 " プレビューウィンドウを垂直分割で表示する
-let g:netrw_preview=1
+" let g:netrw_preview=1
