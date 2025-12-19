@@ -1,3 +1,2 @@
 "#### denops
-let g:denops#deno = '/home/linuxbrew/.linuxbrew/bin/deno'
-
+let g:denops#deno = exepath('deno')
