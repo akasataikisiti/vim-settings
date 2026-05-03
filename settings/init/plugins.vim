@@ -21,6 +21,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'skanehira/denops-translate.vim'
 Plug 'vim-denops/denops.vim'
 Plug 'tpope/vim-surround'
+Plug 'skywind3000/vim-quickui'
 Plug 'jonathanfilip/vim-lucius' " color scheme
 Plug 'yuucu/vimq.vim' " これはqにオプションを正しく渡せてないから自分でnvimように作りたい。あとこれに訂正出してもいいかも
 Plug 'yuratomo/w3m.vim'
@@ -51,4 +52,3 @@ Plug 'Shougo/ddc-matcher_head' " 入力中の単語を補完の対象にするfi
 Plug 'Shougo/ddc-sorter_rank' " 補完候補を適切にソートするfilter
 Plug 'Shougo/ddc-converter_remove_overlap' " 補完候補の重複を防ぐためのfilter
 call plug#end()
-
