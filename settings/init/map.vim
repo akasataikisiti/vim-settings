@@ -9,7 +9,6 @@ source ~/.vim/settings/init/mycommands/buf_gpt.vim
 nnoremap <Leader>ev :e ~/.vim/vimrc<CR>
 nnoremap <Leader>ec :e ~/.vim/cheat.md<CR>
 
-nnoremap <Leader>m  :MRU<CR>
 
 "####レジスタ使用しない削除機能
 nnoremap <leader>d "_d

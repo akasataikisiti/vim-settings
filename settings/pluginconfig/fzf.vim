@@ -17,7 +17,8 @@ command! -nargs=* RgHelp
       \   0
       \ )
 
-nnoremap <Leader>fh :RgHelp<Space>
+nnoremap <Leader>fhf :RgHelp<Space>
+nnoremap <Leader>fhh :Help<CR>
 
 " 開いているバッファから検索
 nnoremap :: :Lines<Space>
@@ -35,4 +36,10 @@ nnoremap <Leader>fg :GFiles<CR>
 nnoremap <Leader>fb :Buffers<CR>
 
 " 最近開いたファイルを検索
-nnoremap <Leader>fo :History<CR>
+nnoremap <Leader>m :History<CR>
+
+" markを検索
+nnoremap <Leader>fm :Marks<CR>
+
+nnoremap <Leader>fc :BCommits<CR>
+nnoremap <Leader>fv :Commands<CR>
