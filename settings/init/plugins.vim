@@ -3,7 +3,7 @@ call plug#begin()
 Plug 'easymotion/vim-easymotion' " cursor move
 Plug 'yegappan/mru'
 Plug 'tpope/vim-commentary'
-Plug 'mileszs/ack.vim'
+Plug 'junegunn/fzf.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
